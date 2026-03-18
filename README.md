@@ -1,4 +1,4 @@
-# 🚗 Self-Driving Vehicle — Arduino Robotics Suite
+# Self-Driving Vehicle
 
 A hands-on embedded systems project built around three progressively complex autonomous vehicle modules, all written in C++ for Arduino-compatible hardware. This repo documents my journey from remote-controlled basics to full sensor-driven autonomy — each module is self-contained, well-commented, and designed to actually work on real hardware.
 
@@ -112,14 +112,14 @@ If error = 0 → go straight at base speed
 
 | Component                   | Quantity | Notes                       |
 | --------------------------- | -------- | --------------------------- |
-| Arduino Uno / Nano          | 1        | Any AVR-based board works   |
+| Arduino Uno                 | 1        | Any AVR-based board works   |
 | ESP8266 / NodeMCU           | 1        | For WiFi module only        |
 | L298N Motor Driver          | 1        | Shared across all modules   |
-| DC Gear Motors (TT motors)  | 2–4      | Depends on chassis          |
+| DC Gear Motors              | 2–4      | Depends on chassis          |
 | HC-SR04 Ultrasonic Sensor   | 1        | Obstacle avoider module     |
 | SG90 / MG90S Servo          | 1        | For servo pan on ultrasonic |
 | IR Sensor Array (5-channel) | 1        | Lane follower module        |
-| LiPo / Li-ion Battery Pack  | 1        | 7.4V recommended            |
+| Li-ion Battery Pack         | 1        | 7.4V recommended            |
 | Chassis + wheels + casters  | 1 set    | 2WD or 4WD                  |
 | Jumper wires, breadboard    | —        | Standard prototyping stuff  |
 
@@ -170,7 +170,7 @@ Each folder is a standalone Arduino sketch. Open the `.ino` file directly in the
 2. Open the `.ino` file for the module you want in the Arduino IDE.
 
 3. Select the correct board:
-   - Arduino Uno/Nano → for lane follower and obstacle avoider
+   - Arduino Uno → for lane follower and obstacle avoider
    - NodeMCU 1.0 (ESP-12E) → for WiFi bot
 
 4. Set your COM port, hit **Upload**.
